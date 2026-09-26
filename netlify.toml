@@ -1,0 +1,7 @@
+[build]
+  publish = "public"
+  functions = "netlify/functions"
+
+# No build step: the client is a single static page that talks to Supabase
+# directly. SUPABASE_URL and SUPABASE_ANON_KEY are set as site environment
+# variables and read by netlify/functions/config.js at request time.
